@@ -1,7 +1,5 @@
-import pytest
-
-
 from app.split_integer import split_integer
+
 
 def test_sum_of_the_parts_should_be_equal_to_value() -> None:
     assert (
@@ -22,7 +20,7 @@ def test_should_return_part_equals_to_value_when_split_into_one_part() -> None:
 
 
 def test_parts_should_be_sorted_when_they_are_not_equal() -> None:
-    parts = split_integer(8,3)
+    parts = split_integer(8, 3)
     assert (
         parts == sorted(parts)
     ), "Part should be sorted if not equal"
